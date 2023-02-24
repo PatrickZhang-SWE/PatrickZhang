@@ -1,0 +1,24 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: info
+    entries:
+      - title: 软件开发工程师
+      - title: java,Linux,back-end
+      - title: China
+      - title: books
+        url: books.html
+      - title: more about me
+        url: about.html
+  - title: all posts
+    post_list:
+      limit: 10
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html
+  - title: all categories
+    category_list: true
+  - title: years
+    year_list: true
+    
