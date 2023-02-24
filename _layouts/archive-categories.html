@@ -7,7 +7,7 @@ layout: default
   {% for post in site.posts %}
   {% if post.categories contains page.category or post.category == page.category %}
     <li>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span>{{ post.date | date: site.theme_config.date_format }}</span>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
   {% endif %}  

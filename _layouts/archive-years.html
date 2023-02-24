@@ -8,7 +8,7 @@ layout: default
 {% assign postyear = post.date | date: "%Y" %}
   {% if postyear == page.year %}
   <li>
-    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+    <span>{{ post.date | date: site.theme_config.date_format }}</span>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
   </li>
   {% endif %} 

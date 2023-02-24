@@ -6,7 +6,7 @@ layout: default
 <ul class="posts">
   {% for post in page.posts %}
     <li>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span>{{ post.date | date: site.theme_config.date_format }}</span>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
