@@ -55,8 +55,8 @@ hr {
   text-align: center;
   border: 0;
 
-  &:before { content: '-----' }
-  &:after { content: attr(data-content) '-----' }
+  &:before { content: '/////' }
+  &:after { content: attr(data-content) '/////' }
 }
 
 table { width: 100%; }
