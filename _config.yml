@@ -46,6 +46,7 @@ jekyll-archives:
 plugins:
   - jekyll-feed
   - jekyll-archives
+  - jekyll-seo-tag
 
 collections:
   archives:
