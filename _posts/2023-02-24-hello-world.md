@@ -2,7 +2,7 @@
 layout: post
 title: hello world!
 date: 2023-02-24 20:23 +0800
-categories: jekyll update
+categories: zh en jekyll
 ---
 > hope this finds you well, this is a test page. I'll post a blog talking about how I set this website up late.
 
