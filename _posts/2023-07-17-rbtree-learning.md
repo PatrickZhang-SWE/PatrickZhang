@@ -423,3 +423,182 @@ I also don't understand this code so I'm not going to explain it here.
 ## The End
 
 RB-tree is indeed a complicated structure. I can't understand it even after more than 10 hours of study. My head is a mess right now, can't think anything efficiently. Maybe I'll review this code to rethink it again. Maybe....
+
+## Review(2023/7/22)
+
+Here comes the review, after another round of thinking. I think I may explain the RBTree insertion and deletion.
+
+### Review about Insertion
+
+The ultimate goal of RBTree is to build a well-balanced tree. When a node is added that goal might be disrupted: one branch becomes longer. If that branch is the left one, we may need a right rotation to correct it and vice versa。 That's the reason why we need to discuss two situations separately. Let's use if the new node is added to its parent's left branch as an example to explain.
+
+Let's be clear: adding a node doesn't mean the balance is sabotaged. If we have three nodes already in the tree:
+
+> R means red and B means black.
+
+```shell
+  2B
+ / \
+1R  3R
+```
+
+Then we add a new node 0.
+
+```shell
+     2B
+    / \
+   1B  3B
+  /
+ 0R 
+```
+
+As you can tell, the color may change but the structure maintains. There is no rotation after insertion. In this sutiation the corresponding code is:
+
+```java
+if(uncleNode.color == 1){
+    node.parentNode.color = 2;
+    uncleNode.color = 2;
+    node.parentNode.parentNode.color = 1;
+    node = node.parentNode.parentNode;
+    .....
+rbTree.root.color = 2;
+```
+
+Why do we need to check the color of uncle node?
+
+Before we call the fix-up method there are three things we already knew:
+
+1. The new node is red.
+2. The new node's parent is red.
+3. The grandparent node is black.
+
+If the uncle node is red, then the parent node and uncle node are the same color and that means before the insertion from the new node's grandparent node to every leaf, the number of nodes are same. If we see this from the perspective of the grandparent node, the new node is creating a new layer in the tree and it's the first node of that layer, like the example we give above.
+
+When the uncle node is black, means the colors between the parent node and the uncle node are different and this is the case where we need a rotation. It's easy to understand from the perspective of the grandparent node: the left subtree and the right subtree have the same black node but the left tree has two consecutive red nodes. The left subtree has more nodes than the right subtree and we need a rotation. Here, the left subtree has more red nodes. If the two consecutive red nodes are in a row on the left path of the grandparent node, then we can just do a right rotation to move one node to its right subtree.
+
+*red nodes in a row, 1B is the grandparent node.*
+
+```java
+       2B
+      / \
+     1B  3B
+    /
+   0R 
+  /
+-1R
+```
+
+What if the new node is its parent right node?
+
+```java
+     2B
+    / \
+   1B  3B
+  /
+ 0R 
+  \
+   0.5R
+```
+
+In this case, let's just rotate it as the red nodes are in a row.
+
+```java
+     2B
+    / \
+   0B  3B
+    \
+     1R
+    /
+   0.5R  
+```
+
+The new node follows its parent node becomes the right node of its grandparent node, which means the problem remains.
+
+Let's rewind to what we need to do here:
+
+1. move one red node to the right subtree.
+
+So if the new node is its parent node's right tree, the rotation doesn't meet this goal. We need a left rotation between the new node and its parent node.
+
+```java
+if(node == node.parentNode.rightChild){
+    node = node.parentNode;
+    leftRotate(rbTree,node);
+}
+```
+
+Let's do the right rotation on the grandparent node now. There is a color change between the parent node and the grandparent node, which means the grandparent node with red color now is moved to its original right subtree and the new node is still on the left subtree.
+
+```shell
+```java
+       2B
+      / \
+     0B  3B
+    / \
+ -1R   1R
+```
+
+Now from the original grandparent node's view, all its subtrees are well balanced.
+
+### Review about Deletion
+
+Now, let's delve into what happens when deleting a node from a RBTree. The deleted node has a supplement and gets its color, so nothing changes. However, the supplement node has a supplement node and that can be a problem only when the supplement node used to replace deleted node is black.
+
+**Let's call the node that has the original position of the supplement node as A.**
+
+If A is its parent node's left node, then from the standpoint of the parent node its left subtree misses one black node. We need to do a left rotation to correct that.
+
+If A's sibling node is red, then what do we have here?
+
+1. The parent node must be black.
+2. A's color is undetermined.
+
+Let' go back to before deletition, the supplement node is black but its sibling is black and it was a well-balacked tree, so the sibling tree must have more nodes.
+
+> From the standpoint of parent node, all subtrees' black nodes are same but one of its direct children is red.
+
+After deletion, the left subtree loses one more node. Here, the subtree rooted parent node is definitly not balanced and we need a left rotation to correct is first.
+
+```java
+if(sibling.color == 1){
+    sibling.color = 2;
+    node.parentNode.color = 1;
+    leftRotate(rbTree,node.parentNode);
+    sibling = node.parentNode.rightChild;
+}
+```
+
+If the sibling node is black and all the sibling node's children nodes are black, the A node must be black. Because before the deletion A node is at the same layer with sibling node's children, and it also means the number of nodes are same. In this case we can just reduce one black node on the right subtree.
+
+```java
+if(sibling.leftChild.color ==2 && sibling.rightChild.color==2){
+    sibling.color = 1;
+    node = node.parentNode;
+}
+```
+
+Here, a final left rotation is inevitable. Before the rotation, let's think from the perspective of the sibling node if its left child node is red, then the left child has more nodes than its right node. After the rotation, the left child node is also in the left subtree and the original right subtree becomes an uncle node, which also means any leaf from the left child node tree to its grandparent node has a longer path. Before the rotation, the left subtree is already longer and after rotation, it becomes even longer than the right subtree. So before the final rotation, if the left node is red, we need to do a right rotation on the sibling node to move one node to its right subtree.
+
+```java
+if(sibling.rightChild.color==2){
+    sibling.leftChild.color = 2;
+    sibling.color = 1;
+    rightRotate(rbTree,sibling);
+    sibling = node.parentNode.rightChild;
+}
+```
+
+Untill now, here is the info we have:
+
+1. The sibling node is black.
+2. The sibling node's right child node is red.
+
+The final rotation here will add one black node, which is the sibling node, in the left subtree and reduce one black node, which is the sibling node, in the sibling subtree. The difference between these two subtrees means the RBTree isn't balanced, so we add a new black node in the sibling subtree before rotation.
+
+```java
+sibling.color = node.parentNode.color;
+node.parentNode.color = 2;
+sibling.rightChild.color = 2;// add a new black node
+```
+
+**There is no formal mathematical proof process here, only my speculations and conjectures so they may not be correct.**
