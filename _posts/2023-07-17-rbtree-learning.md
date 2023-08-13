@@ -2,7 +2,7 @@
 layout: post
 title: RBTree learning
 date: 2023-07-17 18:57 +0900
-categories: en
+categories: en algorithm
 ---
 
 RB-tree is always an intriguing topic when it comes to tech interviews. There are numerous memes related to it. The measurement of a software engineer's skills is often a controversial subject, and the ability to write RB-tree-related code becomes one of its focal points. However, I'm not going to talk more about those arguments here. Instead, I'm here to record my learning process of RB-tree.
