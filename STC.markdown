@@ -8,3 +8,4 @@ title: Screen Time Control
 | date    | total time | duolingo time|
 | -------- | ------- | ---- |
 |2024.01.11|*#|##|
+|2024.01.12|***####|*|

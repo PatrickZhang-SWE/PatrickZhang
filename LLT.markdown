@@ -8,3 +8,4 @@ title: Language Learning TimeSheet
 | date    | English | Japanese|
 | -------- | ------- | ---- |
 |2024.01.11|###|*|
+|2024.01.12|##|###|
