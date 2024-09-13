@@ -11,12 +11,6 @@ entries:
         url: books.html
       - title: more about me
         url: about.html
-      - title: my personal OKR
-        url: OKR.html
-      - title: Screen Time Control
-        url: STC.html
-      - title: Language Learning TimeSheet
-        url: LLT.html
   - title: all posts
     post_list:
       limit: 10
