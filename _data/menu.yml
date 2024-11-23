@@ -4,13 +4,15 @@
 entries:
   - title: info
     entries:
-      - title: 软件开发工程师
+      - title: software engineer
       - title: java,Linux,back-end
       - title: China
       - title: books
         url: books.html
       - title: more about me
         url: about.html
+      - title: time investment
+        url: time-investment.html
   - title: all posts
     post_list:
       limit: 10
