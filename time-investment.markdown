@@ -3,11 +3,46 @@ layout: page
 title: time investment
 ---
 
+#### 2024.11.26
+
+##### 7:11-22:23/912mins
+
+1. Commute to office: 7:21-8:17/561mins
+2. Work: 8:44-17:33/529mins
+3. Commute back: 17:33-18:46/73mins
+    * jogging: 18:22-18:26/40mins
+4. Applying material for UR rent: 20:24-20:37/13mins
+5. Japanese reading: 20:40-21:36/44mins
+6. Talking about moving related things: about 120mins
+
+#### 2024.11.25
+
+##### 7:12-23:08/965mins
+
+1. Commute to office: 7:27-8:23/561mins
+    * Review Japanese words: 8:37-8:50/23mins
+2. Work: 8:58-17:33/515mins
+3. Commute back: 17:43~18:46/63mins
+    * jogging: 18:30-18:35/52mins
+4. With phone: 19:02-19:30/28mins
+5. Japanese reading: 19:30-20:23/53mins
+6. Reading: 20:34-21:03/29mins
+7. WebDict: 21:08-23:08/120mins
+
+#### 2024.11.24
+
+##### 8:08-19:34/686mins
+
+1. Review Japanese words: 8:14-8:43/29mins
+2. Learn Rust programming language: 8:47-9:10/23mins
+3. Meiji Jingū-park-home: 10:18-16:03-16:33/375mins
+4. With phone: 16:33-18:16/43mins
+5. Japanese reading: 18:17-19:04/47mins
+6. Reading: 19:18-19:34/16mins
+
 #### 2024.11.23
 
-#### 2024.11.22
-
-##### 7:16-22:39/923mins
+##### 7:16-22:39/913mins
 
 1. Going to park but cancelled: 7:38-7:43/52mins
 2. Review Japanese words: 7:45-8:14/29mins
@@ -25,6 +60,8 @@ title: time investment
 14. Japanese reading: 20:36-20:42/65mins
 15. Reading: 20:53-31:30/37mins
 16. WebDict: 21:31-22:37/66mins
+
+#### 2024.11.22
 
 ##### 7:10 - 21:38/868mins
 
