@@ -5,6 +5,10 @@ title: time investment
 
 ### 2024.11.22-2024.11.30 statistics
 
+|Total|Work|Commute|Producer|Multi-Language learning|Parenting|Reading|Workout|uncount|
+|-----|----|-------|--------|-----------------------|---------|-------|-------|-------|
+|8170 |3199|718    |491     |797                    |1364     |103    |49     |1498   |
+|100% |39% |9%     |6%      |10%                    |17%      |1%     |1%     |18%    |
 
 
 #### 2024.11.30
@@ -19,7 +23,7 @@ title: time investment
 
 ##### 7：13-22：45/932mins
 
-1. Commute to office: 7:24-8:19
+1. Commute to office: 7:24-8:19/55mins
     * Review Japanese words: 7:39-8:10/31mins
 2. Work: 8:40-17:29/529mins
 3. Commute back: 17:34-18:36/62mins
@@ -58,13 +62,13 @@ title: time investment
 6. Setup Anki: 20:03-20:54/52mins
 7. Copy japanese words to Anki: 21:03-21:24/21mins
 8. Webdict: 21:25-22:00/35mins
-9. Blog: 22:00-22:16
+9. Blog: 22:00-22:16/16mins
 
 #### 2024.11.26
 
 ##### 7:11-22:23/912mins
 
-1. Commute to office: 7:21-8:17/561mins
+1. Commute to office: 7:21-8:17/56mins
 2. Work: 8:44-17:33/529mins
 3. Commute back: 17:33-18:46/73mins
     * jogging: 18:22-18:26/40mins
@@ -76,11 +80,11 @@ title: time investment
 
 ##### 7:12-23:08/965mins
 
-1. Commute to office: 7:27-8:23/561mins
+1. Commute to office: 7:27-8:23/56mins
     * Review Japanese words: 8:37-8:50/23mins
 2. Work: 8:58-17:33/515mins
 3. Commute back: 17:43~18:46/63mins
-    * jogging: 18:30-18:35/52mins
+    * jogging: 18:30-18:35/5mins
 4. With phone: 19:02-19:30/28mins
 5. Japanese reading: 19:30-20:23/53mins
 6. Reading: 20:34-21:03/29mins
@@ -101,11 +105,11 @@ title: time investment
 
 ##### 7:16-22:39/913mins
 
-1. Going to park but cancelled: 7:38-7:43/52mins
+1. Going to park but cancelled: 7:38-7:43/5mins
 2. Review Japanese words: 7:45-8:14/29mins
 3. Learn Rust programming language: 8:16-8:31/15mins
 4. Blog change: 9:35-9:47/12mins
-5. Go to the park: 10:02-14:52
+5. Go to the park: 10:02-14:52/370mins
 6. Take a rest: 14:53-16:40/107mins
 7. Got to the park: 16:42-17:37/55mins
 8. Blog: 17:43-18:22/39mins
