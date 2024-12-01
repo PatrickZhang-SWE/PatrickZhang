@@ -3,6 +3,63 @@ layout: page
 title: time investment
 ---
 
+### 2024.11.22-2024.11.30 statistics
+
+
+
+#### 2024.11.30
+
+##### 7:25-3:00AM/1165mins
+
+1. Review Japanese words: 8:30-9:09/39mins
+2. Parenting: 10:08-18:01/473mins
+4. Setup bought used minPC until 3AM next day.
+
+#### 2024.11.29
+
+##### 7：13-22：45/932mins
+
+1. Commute to office: 7:24-8:19
+    * Review Japanese words: 7:39-8:10/31mins
+2. Work: 8:40-17:29/529mins
+3. Commute back: 17:34-18:36/62mins
+    * Review Japanese words: 17:40-17:49/9mins
+    * Learn Rust programming language: 17:50-18:10/20mins
+    * jogging: 18:22-18:26/4mins
+4. Japanese reading: 20:06-20:59/53mins
+5. Reading: 21:08-21:29/21mins
+6. Webdict: 21:38-22:43/65mins
+
+#### 2024.11.28
+
+##### 7:10-20:53/823mins
+
+1. Commute to office: 7:20-8:13/53mins
+    * Review Japanese words: 7:35-8:06/31mins
+2. Work: 8:40-:17:30/530mins
+3. Commute back: 17:37-18:41/64mins
+    * Learn Rust programming language: 17:43-18:01/18mins
+4. Japanese reading: 19:38-20:16/38mins
+5. Copy Japanese words to Anki: 20:16-21:30/75mins
+
+#### 2024.11.27
+
+##### 7:10-22:16/906mins
+
+1. Commute to office: 7:21-8:13/52mins
+    * Review Japanese words: 7:35-8:03/28mins
+2. Work: 8:35-17:30/535mins
+3. Commute back: 17:35-18:42/67mins
+    * Review Japanese words: 17:41-17:47/6mins
+    * Learn Rust programming language: 17:48-17:58/10mins
+    * Jogging: 18:26-18:30/4mins
+4. With phone: 18:50-19:35/45mins
+5. Japanese reading: 19:38-20:03/25mins
+6. Setup Anki: 20:03-20:54/52mins
+7. Copy japanese words to Anki: 21:03-21:24/21mins
+8. Webdict: 21:25-22:00/35mins
+9. Blog: 22:00-22:16
+
 #### 2024.11.26
 
 ##### 7:11-22:23/912mins
