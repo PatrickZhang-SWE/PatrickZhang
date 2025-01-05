@@ -21,3 +21,17 @@ I'm planning to learn it in this way:
 
 ## Japanese Basic Grammar
 If I remember right, this will be the third time leaning Japanse basic grammar(N4~N5). Basically, everytime I leran the grammar, situation like this happens: forgeting what I learned before and getting impacitent. This time I want to add one more step to stop this: using Anki to do the reviews.
+
+## Last day review
+
+### Vim Learning
+
+I've read `Practical Vim` again but skipped the last two charpters and put most used command into Anki. Later, I'll continue to use Anki for reviewing and remembering.
+
+I spent sometime on studying lazyvim for neovim, which is pretty good. I plan to use this as my default IDE in the future.
+
+### Japanese Basic Grammar
+
+Didn't go through all of it but put the verbe conjugations into Anki for later reviewing.
+
+Overall, most of my time didn't spend on these two things but I can say I didn't waste this holiday.
