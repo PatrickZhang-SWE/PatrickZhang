@@ -2,7 +2,7 @@
 layout: post
 title: The first week of working in Tokyo
 date: 2023-07-09 15:59 +0900
-categories: en Tokyo
+categories: en tokyo
 ---
 
 As I said before, I'm working for a small company located in Tokyo and it can be called an "IT dispatch company". The company I signed a contract with is A but I work for company B. I worked in China for serveral years and last week was the fist week I've ever worked in a different country. Japan has its own uniq working style and IT is also inevitable. Because my Japanese is not good, so I cannot find a good site(referring to company B mentioned above). I accepted the offer even thouth I knew I would have to work overtime. You need to know the fact that,working as a software engineer for a traditional Japanese company, the most important skill you shoud have is Japanese, rather than programming.
