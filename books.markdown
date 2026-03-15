@@ -4,11 +4,10 @@ title: Books
 ---
 ## Reading
 
-* ~~How does Linux work~~
-* Happier Hour: How to Beat Distraction, Expand Your Time, and Focus on What Matters Most
+* Computer Systems: A Programmer's Perspective
+* Advanced Programming in the Unix Environment
 
 ## To Read
 
-## Read
-
-* Soulstealers: The Chinese Sorcery Scare of 1768
+* Understanding the Linux Kernel
+* Introduction to Algorithms
